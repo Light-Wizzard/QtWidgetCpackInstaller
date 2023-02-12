@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.311111mm"
+   height="90.311111mm"
+   viewBox="0 0 90.311111 90.311111"
+   version="1.1"
+   id="svg40996"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="TrinaryUniversity.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview40998"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74475309"
+     inkscape:cx="606.91255"
+     inkscape:cy="137.62951"
+     inkscape:window-width="1280"
+     inkscape:window-height="658"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs40993">
+    <rect
+       x="-4.0281807"
+       y="0"
+       width="354.4799"
+       height="342.39536"
+       id="rect281" />
+    <rect
+       x="1.3427269"
+       y="2.6854538"
+       width="339.7099"
+       height="338.36718"
+       id="rect219" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(55.458187,-27.318129)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-55.458187,27.318129)"
+       id="text217"
+       style="fill:#000000;white-space:pre;shape-inside:url(#rect219)" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.22777778px;white-space:pre;inline-size:71.4973;fill:#000000;stroke-width:0.264583"
+       x="-49.773975"
+       y="33.357601"
+       id="text225" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-55.458187,27.318129)"
+       id="text279"
+       style="fill:#000000;font-size:61.33333333px;-inkscape-font-specification:lightwizzard;font-family:lightwizzard;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;white-space:pre;shape-inside:url(#rect281)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:lightwizzard;-inkscape-font-specification:lightwizzard;white-space:pre;inline-size:77.9434;fill:#000000;stroke-width:0.264583"
+       x="-49.06345"
+       y="47.212864"
+       id="text287"
+       transform="translate(0,13.855263)"><tspan
+         x="-49.06345"
+         y="47.212864"
+         id="tspan305">Trinary
+</tspan><tspan
+         x="-49.06345"
+         y="69.261491"
+         id="tspan307">University</tspan></text>
+  </g>
+</svg>
