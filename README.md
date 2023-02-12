@@ -14,8 +14,6 @@ Table of Content
 * [MSVC](#MSVC)
 * [MinGW](#MinGW)
 * [Progress](#Progress)
-* [](#)
-* [](#)
 
 ## Development
 I am using Windows 10 Pro, on an old XEON with 10 Cores or 20 Threads, and 32 GB of RAM, 
