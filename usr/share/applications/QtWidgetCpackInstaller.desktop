@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=QtWidgetCpackInstaller
+GenericName=QtWidgetCpackInstaller
+Comment=Qt Widget cpack Installer by the Light Wizzard
+Icon=QtWidgetCpackInstaller
+Exec=QtWidgetCpackInstaller
+Terminal=false
+Categories=Education;
+Keywords=translation;
+Name[en_US]=QtWidgetCpackInstaller.desktop
