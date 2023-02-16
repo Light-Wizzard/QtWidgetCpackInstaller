@@ -252,12 +252,7 @@ if(OSS_WINDOWS)
   # QTWEBENGINEPROCESS_PATH="?"
 
   # \translations
-#  message(STATUS "Looking for translations qm files")
-#  file(GLOB files "${CMAKE_BINARY_DIR}/translations/*.qm")
-#  foreach(file ${files})
-#      #message(STATUS "Installing translations qm file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR}/translations COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
+  message(STATUS "Looking for translations folder")
   install(DIRECTORY ${CMAKE_BINARY_DIR}/translations/ DESTINATION ${CMAKE_INSTALL_BINDIR}/translations COMPONENT ${COMPONENT_NAME_MAIN})
   # These are all the files WinDeployQt found
   message(STATUS "Looking for WinDeployQt dll files")
@@ -267,12 +262,7 @@ if(OSS_WINDOWS)
       install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
   endforeach()
   # Platform dlls
-#  message(STATUS "Looking for platforms dll files")
-#  file(GLOB files "${CMAKE_BINARY_DIR}/platforms/*.dll")
-#  foreach(file ${files})
-#      #message(STATUS "Installing platforms dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR}/platforms COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
+  message(STATUS "Looking for platforms folder")
   install(DIRECTORY ${CMAKE_BINARY_DIR}/platforms/ DESTINATION ${CMAKE_INSTALL_BINDIR}/platforms COMPONENT ${COMPONENT_NAME_MAIN})
   if (MSVC)
     message(STATUS "Looking for MSVC plugins platform dll files ${CMAKE_PREFIX_PATH}")
@@ -290,52 +280,29 @@ if(OSS_WINDOWS)
 #          install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR}/platforms COMPONENT ${COMPONENT_NAME_MAIN})
 #      endforeach()
   endif()
-
+  #
+  message(STATUS "Looking for Web Engine resources folder")
   install(DIRECTORY ${CMAKE_BINARY_DIR}/resources/ DESTINATION ${CMAKE_INSTALL_BINDIR}/resources COMPONENT ${COMPONENT_NAME_MAIN})
+  message(STATUS "Looking for texttospeech folder")
   install(DIRECTORY ${CMAKE_BINARY_DIR}/texttospeech/ DESTINATION ${CMAKE_INSTALL_BINDIR}/texttospeech COMPONENT ${COMPONENT_NAME_MAIN})
-
-#  # iconengines
-#install(DIRECTORY iconengines/ DESTINATION ${CMAKE_INSTALL_BINDIR}/iconengines COMPONENT ${COMPONENT_NAME_MAIN})
-#  file(GLOB files "${CMAKE_BINARY_DIR}/iconengines/*.dll")
-#  foreach(file ${files})
-#      message(STATUS "Installing dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
-#  # imageformats
-#install(DIRECTORY imageformats/ DESTINATION ${CMAKE_INSTALL_BINDIR}/imageformats COMPONENT ${COMPONENT_NAME_MAIN})
-#  file(GLOB files "${CMAKE_BINARY_DIR}/imageformats/*.dll")
-#  foreach(file ${files})
-#      message(STATUS "Installing dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
-#  # networkinformation
-#install(DIRECTORY networkinformation/ DESTINATION ${CMAKE_INSTALL_BINDIR}/networkinformation COMPONENT ${COMPONENT_NAME_MAIN})
-#  file(GLOB files "${CMAKE_BINARY_DIR}/networkinformation/*.dll")
-#  foreach(file ${files})
-#      message(STATUS "Installing dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
-#  # styles
-#install(DIRECTORY styles/ DESTINATION ${CMAKE_INSTALL_BINDIR}/styles COMPONENT ${COMPONENT_NAME_MAIN})
-#  file(GLOB files "${CMAKE_BINARY_DIR}/styles/*.dll")
-#  foreach(file ${files})
-#      message(STATUS "Installing dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
-#  # tls
-#install(DIRECTORY tls/ DESTINATION ${CMAKE_INSTALL_BINDIR}/tls COMPONENT ${COMPONENT_NAME_MAIN})
-#  file(GLOB files "${CMAKE_BINARY_DIR}/tls/*.dll")
-#  foreach(file ${files})
-#      message(STATUS "Installing dll file: ${file}")
-#      install(FILES "${file}" DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT ${COMPONENT_NAME_MAIN})
-#  endforeach()
-else()
+    # iconengines
+    #install(DIRECTORY ${CMAKE_BINARY_DIR}/iconengines/ DESTINATION ${CMAKE_INSTALL_BINDIR}/iconengines COMPONENT ${COMPONENT_NAME_MAIN})
+    # imageformats
+    #install(DIRECTORY ${CMAKE_BINARY_DIR}/imageformats/ DESTINATION ${CMAKE_INSTALL_BINDIR}/imageformats COMPONENT ${COMPONENT_NAME_MAIN})
+    # networkinformation
+    #install(DIRECTORY ${CMAKE_BINARY_DIR}/networkinformation/ DESTINATION ${CMAKE_INSTALL_BINDIR}/networkinformation COMPONENT ${COMPONENT_NAME_MAIN})
+    # styles
+    #install(DIRECTORY ${CMAKE_BINARY_DIR}/styles/ DESTINATION ${CMAKE_INSTALL_BINDIR}/styles COMPONENT ${COMPONENT_NAME_MAIN})
+    # tls
+    #install(DIRECTORY ${CMAKE_BINARY_DIR}/tls/ DESTINATION ${CMAKE_INSTALL_BINDIR}/tls COMPONENT ${COMPONENT_NAME_MAIN})
+else() # end if(OSS_WINDOWS)
+  # All things not Windows, I need to be in Linux to work on this
+  # I do not own a Mac or iOS license, so I cannot work on those builds
   set(CPACK_STRIP_FILES "bin/${PROJECT_NAME}")
   set(CPACK_SOURCE_STRIP_FILES "")
 endif()
 
 set(CPACK_PACKAGE_EXECUTABLES "${PROJECT_NAME}" "${PROJECT_NAME}")
-
 
 include(CPack)
 CPACK_ADD_COMPONENT(${PROJECT_NAME} ${COMPONENT_NAME_MAIN})

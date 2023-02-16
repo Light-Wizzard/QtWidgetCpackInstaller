@@ -2,7 +2,7 @@
  * \brief This is an example Application to show how to use cpack, WinDeployQt, and NSIS
  * \authors Qt Example Code, and Jeffrey Scott Flesher for Light-Wizzard
  * \copyright Copyright (C) 2016 The Qt Company Ltd.
- * \copybrief SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
+ * SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
  */
 
 #include "mainwindow.h"
@@ -591,7 +591,7 @@ void MainWindow::setStatus(const QString &theStatus, MyStatusTypes theStatusType
 }
 /** ***************************************************************************
  * \brief MainWindow::onSpinBoxIconValueChanged
- * \param Unused arg1
+ * \param arg1
  */
 void MainWindow::onSpinBoxIconValueChanged(int arg1)
 {

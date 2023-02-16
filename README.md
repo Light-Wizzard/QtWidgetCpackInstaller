@@ -21,6 +21,7 @@ Table of Content
 * [MinGW](#MinGW)
 * [Progress](#Progress)
 * [Documentation](#Documentation)
+* [Downloads](#Downloads)
 
 ## Development
 
@@ -83,9 +84,7 @@ E:\Qt\Tools\CMake_64\bin\cpack.exe -C Release -G NSIS
 
 ```
 
-It takes more time to make debug versions than release versoins, 
-but it does take a lot of time to build them on my machine, 
-I did not time it, but it is not locked up, it will finish.
+It takes time to make the file, it copies a lot of files, so wait for it.
 
 ## Documentation
 
@@ -148,7 +147,7 @@ and I will update this code to reflect known good values.
 ## WinDeployQt
 
 I found this GitHub Project nitroshare, https://github.com/nitroshare/nitroshare-desktop/, 
-and I modified their cmake that runs WinDeployQt
+and I modified their cmake that runs WinDeployQt.
 
 ## MSVC
 
@@ -169,5 +168,11 @@ the Qt6TextToSpeach.dll, gets picked up, but does not not get added.
 ## Documentation
 
 [Doxygen Documentation](http://Light-Wizzard.github.io/QtWidgetCpackInstaller/index.html)
+
+## Downloads
+
+Currently I am only working in Windows, but I am normally a Linux person.
+
+[Windows 10 or greater installer](https://github.com/Light-Wizzard/QtWidgetCpackInstaller/releases/download/Windows10gt/QtWidgetCpackInstaller-0.1.0-win64.exe)
 
 ### End of Document

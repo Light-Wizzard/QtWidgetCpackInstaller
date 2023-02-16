@@ -4,7 +4,7 @@
 #include "document.h"
 /** ***************************************************************************
  *  \brief Document::setText
- *  \param text
+ *  \param thisText
  */
 void Document::setText(const QString &thisText)
 {
